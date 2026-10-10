@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111214">
+  <meta name="description" content="Portfolio ของ Thammanoon นักพัฒนาเว็บไซต์และซอฟต์แวร์">
+  <title>Thammanoon — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="dark-theme">
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="กลับไปด้านบน">PORTFOLIO</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="เปิดเมนู">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="เมนูหลัก">
+      <a class="nav-active" href="#top">หน้าหลัก</a>
+      <a href="#about">ประวัติ</a>
+      <a href="#work">ผลงาน</a>
+      <a href="#contact">แหล่งข้อมูล</a>
+      <button class="theme-toggle" type="button" aria-label="เปลี่ยนธีม" aria-pressed="true" title="เปลี่ยนธีม">
+        <span aria-hidden="true">☀</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO SECTION -->
+    <section class="hero page-grid" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow hero-greeting">HI, THIS IS</p>
+        <p class="hero-kicker">MY PORTFOLIO</p>
+        <h1 id="hero-title" aria-label="Thammanoon">
+          <span class="typing-line">
+            <span id="typed-name" aria-live="off">THAMMANOON</span>
+            <span class="typing-cursor" aria-hidden="true"></span>
+          </span>
+        </h1>
+        <p class="hero-subtitle">Frontend Developer &amp; UI/UX Enthusiast</p>
+        <div class="hero-socials" aria-label="ช่องทางโซเชียล">
+          <a href="https://www.instagram.com/thammanoon.sc___/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="social-dot" cx="17.7" cy="6.7" r=".9"></circle></svg>
+          </a>
+          <a href="https://www.facebook.com/thrrmnuy.sricanthr" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.2 20v-7h2.4l.4-3h-2.8V8.1c0-.9.3-1.5 1.6-1.5h1.3V4a16 16 0 0 0-2.2-.1c-2.2 0-3.7 1.3-3.7 3.8V10H9v3h2.2v7"></path><circle cx="12" cy="12" r="9"></circle></svg>
+          </a>
+          <a href="https://x.com/HereTu332211" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" title="X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h3.8l10.2 16h-3.8L5 4Zm0 16 6.6-7.2M12.4 11.2 19 4"></path></svg>
+          </a>
+          <a href="https://www.tiktok.com/@sekai.tu" target="_blank" rel="noopener noreferrer" aria-label="TikTok" title="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4v10.2a4 4 0 1 1-3.2-3.9M14 4c.5 2.6 2.1 4.1 4.8 4.4"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- โครงสร้างสำหรับ Pop-Out Circle Image -->
+      <div class="hero-art" aria-label="ภาพถ่ายเจ้าของ Portfolio">
+        <div class="hero-avatar-wrap">
+          <div class="hero-circle-bg" aria-hidden="true"></div>
+          <img class="hero-photo" src="pic/me1.png" alt="ภาพถ่ายของ Thammanoon">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="history-section" id="about" aria-labelledby="history-title">
+      <header class="history-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2 id="history-title">About Me</h2>
+      </header>
+      <div class="history-content">
+        <figure class="history-portrait">
+          <img src="pic/นี่ไง.png" alt="ภาพถ่ายของ Thammanoon" loading="lazy">
+        </figure>
+        <div class="history-copy">
+          <span class="history-index">อ่านได้นะครับประวัติไม่ได้บูด อิอิ</span>
+          <p>สวัสดีครับ ผมชื่อธรรมนูญ ศรีจันทร์ ชื่อเล่น ก้ำ หรือ กั้ม แล้วแต่จะเรียกเลยไม่ต่างกันหรอก ผมเริ่มต้นการเรียนจากมัธยมต้นจากโรงเรียนนารีรัตน์จังหวัดแพร่เมื่อปี พ.ศ.2563 (ม.1) จนจบการศึกษาในปี พ.ศ.2566 (ม.3) และได้ศึกษาต่อในระดับ (ปวช.) ปี พ.ศ.2566 จนจบ (ปวช.) ปี พ.ศ.2568 <br>
+            ปัจจุบันกำลังศึกษาต่ออยู่ในระดับ (ปวส.) ปี พ.ศ.2569</p>
+          
+          <p>ปัจจุบันเข้ามาศึกษาต่อในระดับ (ปวช.) ปี พ.ศ.2566 ช่วงปีที่ 1 ได้เรียนและฝึกทักษะการฝึกเขียนโค้ด ในช่วงนั้นได้เรียนเขียนโค้ดภาษา HTML และ CSS ในการออกแบบโครงสร้างเว็บและตกแต่ง และรวมถึงได้เรียนภาษา C ในช่วงเทอมที่ 1 และเทอมที่ 2 <br>
+            ขึ้นปีที่ 2 ได้เรียนการใช้บอร์ด Arduino ในการต่อวงจรและได้เขียนโค้ดสั่งการควบคู่ไปด้วย และได้สร้างแอพ UX ให้ทำงานสั่งการผ่านเว็บไซต์ส่วนตัวได้ และได้ออกแบบแอพพลิเคชันให้สร้างผ่านแอพสำเร็จรูปจาก (Play Store / App Store) จะเป็นการออกแบบ UX/UI ขนาดย่อมให้จำลองสำหรับผู้ใช้ที่จะมาใช้งานแอพของเรา และได้เรียนภาษา C# (C-Sharp), C++ และ PHP ออกแบบฐานข้อมูลไปด้วยกัน <br>
+            ช่วงเทอมที่ 2 ได้ออกฝึกงานที่ร้าน หจก.เวิร์ลไวด์คอมพิวเตอร์แพร่ ใช้เวลาฝึกอยู่ที่ร้าน 4 เดือน ได้เรียนรู้การซ่อมคอมพิวเตอร์และการประกอบคอมพิวเตอร์ การลง Windows และโปรแกรมต่างๆ และได้เรียนรู้การทำงานของระบบคอมพิวเตอร์และอุปกรณ์ต่อพ่วงต่างๆ <br>
+            ขึ้นปีที่ 3 ได้เริ่มเรียนไฟฟ้าและอุปกรณ์ IoT มากขึ้นในการเอาไปทำโปรเจกต์จบของ (ปวช.3) ได้ศึกษาโค้ดพร้อมกับอุปกรณ์ที่จะเอามาทำโปรเจกต์ไปด้วยตลอดภาคเรียนที่ 1 พร้อมทั้งการเสนอชื่อโปรเจกต์ที่จะทำโดยแต่ละกลุ่มจะมีกันอยู่ 3 คน และทำเอกสารโปรเจกต์ควบคู่ไปด้วย โปรเจกต์ที่ได้ทำคือราวตากผ้า (อัจฉริยะ) เทอมแรกได้ต่อวงจรบ่อยมากและได้ทำมินิโปรเจกต์ส่งเป็นครั้งแรกถือว่าผ่านใช้ได้ รวมถึงนำเสนอโปรเจกต์จบ 50% <br>
+            ช่วงปิดเทอมและเปิดเทอมที่ 2 ได้ออกแบบและทำโปรเจกต์ระหว่างรอเปิดเรียนยาวๆ ทั้งลองผิดลองถูกติดลูปวนไปจนเปิดเทอม และก็ได้ต่อเติมตกแต่งจนถึงท้ายเทอมพร้อมทั้งทำเอกสารโปรเจกต์จบ 100% ไปด้วย
+          </p>
+
+          <p>
+            ขึ้น ปวส.1 (ปัจจุบัน) ได้เรียนภาษาเพิ่มคือ Python และกลับมาวนเรียนภาษา C อีกครั้ง แต่ภาษา Python เรียนแล้วสนุกมาก ได้ลองออกแบบอะไรที่ไม่เคยออกแบบมาก่อน ชอบมากๆ และได้ทำมินิโปรเจกต์อีกครั้ง และกลับมาเรียน IoT ที่ผสมผสาน Network<br>
+          </p>
+
+          <div class="history-skills" aria-label="ทักษะ">
+            <span class="skill-tag">HTML / CSS / Python</span>
+            <span class="skill-tag">C / C++ / C#</span>
+            <span class="skill-tag">IoT &amp; App Design</span>
+            <span class="skill-tag">UI/UX Design</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work section -->
+    <section class="work-section" id="work" aria-labelledby="work-title">
+      <div class="section-heading page-grid">
+        <p class="eyebrow">SELECTED PROJECTS · 2022—2026</p>
+        <h2 id="work-title">ผลงานต่างๆ<br><span>BY ME</span></h2>
+        <p class="section-note">ที่เห็นนี่ ไม่ธรรมดานะครับ ผมก็ไม่รุ้เหมือนกันว่าจะพิมพ์อะไรต่อดี555</p>
+      </div>
+
+      <!-- หมวดหมู่ผลงาน -->
+      <div class="work-filters" role="tablist" aria-label="หมวดหมู่ผลงาน">
+        <button type="button" class="filter-btn filter-active" data-filter="all">All</button>
+        <button type="button" class="filter-btn" data-filter="website">Website</button>
+        <button type="button" class="filter-btn" data-filter="iot">IoT</button>
+        <button type="button" class="filter-btn" data-filter="app">Application</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card" data-category="website">
+      <a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <div class="project-thumb">
+          <img src="pic/saber.jpg" alt="Zawa Dashboard" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <h3 class="project-name">(เว็บไซต์)</h3>
+          <span class="project-cat">Website Design</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 2 (Website) -->
+    <article class="project-card" data-category="website">
+      <a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <div class="project-thumb">
+          <img src="pic/project2.png" alt="Black Portfolio" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <h3 class="project-name">...</h3>
+          <span class="project-cat">Interactive Web</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 3 (IoT) -->
+    <article class="project-card" data-category="iot">
+      <a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <div class="project-thumb">
+          <img src="pic/project3.png" alt="Smart Drying Rack" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <h3 class="project-name">...</h3>
+          <span class="project-cat">IoT System</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 4 (Application) -->
+    <article class="project-card" data-category="app">
+      <a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <div class="project-thumb">
+          <img src="pic/project4.png" alt="Mountain App" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <h3 class="project-name">...</h3>
+          <span class="project-cat">Mobile App</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 5 (IoT) -->
+    <article class="project-card" data-category="iot">
+      <a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <div class="project-thumb">
+          <img src="pic/project5.png" alt="Environment Monitor" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <h3 class="project-name">...</h3>
+          <span class="project-cat">IoT Hardware</span>
+        </div>
+      </a>
+    </article>
+
+    <!-- 6 (Website) -->
+    <article class="project-card" data-category="website">
+      <a class="project-link" href="https://example.com" target="_blank" rel="noopener noreferrer">
+        <div class="project-thumb">
+          <img src="pic/project6.png" alt="SoundPro Store" loading="lazy">
+        </div>
+        <div class="project-meta">
+          <h3 class="project-name">...</h3>
+          <span class="project-cat">Video</span>
+        </div>
+      </a>
+    </article>
+  </div>
+</section>
+
+    <!-- Contact section -->
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="contact-panel">
+        
+        <!-- ฝั่งซ้าย: รูปคนแนบสนิทกับพื้นกรอบ -->
+        <div class="contact-visual">
+          <img src="pic/พรี่คาซึยะ.png" alt="Thammanoon" class="contact-person-img" loading="lazy">
+        </div>
+
+        <!-- ฝั่งขวา: หัวข้อและรายการช่องทางติดต่อ -->
+        <div class="contact-info">
+          <header class="contact-header">
+            <p class="eyebrow">THIS HERE</p>
+            <h2 id="contact-title">ช่องทางติดต่อ</h2>
+          </header>
+
+          <div class="contact-rows">
+            <a href="https://www.facebook.com/thrrmnuy.sricanthr" target="_blank" rel="noopener noreferrer" class="contact-row-item">
+              <span class="contact-label">ธรรมนูญ ศรีจันทร์</span>
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24"><path d="M14.2 20v-7h2.4l.4-3h-2.8V8.1c0-.9.3-1.5 1.6-1.5h1.3V4a16 16 0 0 0-2.2-.1c-2.2 0-3.7 1.3-3.7 3.8V10H9v3h2.2v7" fill="currentColor"></path></svg>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/thammanoon.sc___/" target="_blank" rel="noopener noreferrer" class="contact-row-item">
+              <span class="contact-label">thammanoon.sc___</span>
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5" fill="none" stroke="currentColor" stroke-width="2"></rect><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle><circle cx="17.7" cy="6.7" r="1" fill="currentColor"></circle></svg>
+              </div>
+            </a>
+
+            <a href="https://x.com/HereTu332211" target="_blank" rel="noopener noreferrer" class="contact-row-item">
+              <span class="contact-label">@HereTu332211</span>
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24"><path d="M5 4h3.8l10.2 16h-3.8L5 4Zm0 16 6.6-7.2M12.4 11.2 19 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+              </div>
+            </a>
+
+            <a href="https://www.tiktok.com/@sekai.tu" target="_blank" rel="noopener noreferrer" class="contact-row-item">
+              <span class="contact-label">sekai.TUU</span>
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24"><path d="M14 4v10.2a4 4 0 1 1-3.2-3.9M14 4c.5 2.6 2.1 4.1 4.8 4.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+              </div>
+            </a>
+
+            <a href="mailto:thammona51@gmail.com" class="contact-row-item">
+              <span class="contact-label">thammona51@gmail.com</span>
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"></rect><path d="m4 7 8 6 8-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>
+              </div>
+            </a>
+
+            <a href="tel:+66805042731" class="contact-row-item">
+              <span class="contact-label">+66 80-504-2731</span>
+              <div class="contact-icon-bubble">
+                <svg viewBox="0 0 24 24"><path d="M7 3H4a1 1 0 0 0-1 1c0 9.4 7.6 17 17 17a1 1 0 0 0 1-1v-3l-5-2-2 3a14 14 0 0 1-5-5l3-2-2-5Z" fill="currentColor"></path></svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>© 2026 Designed and Built by Thammanoon Srichan</p>
+  </footer>
+</body>
+</html>
